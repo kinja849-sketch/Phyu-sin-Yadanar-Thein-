@@ -129,6 +129,7 @@ function initLoader() {
 
 // Animation - Page Leave
 window.pageTransitionIn = pageTransitionIn;
+window.pageTransitionOut = pageTransitionOut;
 window.getNonRepeatingRandomTheme = getNonRepeatingRandomTheme;
 function pageTransitionIn() {
   var tl = gsap.timeline();
@@ -410,6 +411,7 @@ function initLenis() {
     lerp: 0.165,
     wheelMultiplier: 1.25,
   });
+  window.lenis = lenis;
 
   lenis.on('scroll', ScrollTrigger.update);
 
